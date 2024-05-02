@@ -1,0 +1,58 @@
+
+
+body {
+    background-image: url(../images/space1.jpg);
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+   }
+.container {
+	width: 1165px;
+	margin: 0 auto;
+}
+.mars
+{
+    position: relative;
+    display: inline-block;
+margin-left: 120px;
+margin-top: 81px;
+}
+.rocket
+{
+    position: relative;
+    display: inline-block;
+    animation: move 2s ease-in 2s infinite  alternate-reverse;
+}
+.rocketM
+{
+    width: 250px;
+    height: 250px;
+    margin-left: 1000px;
+    margin-top: 260px;
+    transition: 3s;
+}
+.rocketM:hover
+{
+    transform: rotate(360deg) ;
+}
+  .planet1
+  {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    transition: 3s;
+  }
+  .planet1:hover{
+   transform: rotate(360deg) ;
+   width: 500px;
+   height: 500px;
+  }
+
+  @keyframes move {
+   100% {bottom: 70px; right: -500px; }
+   50% {bottom: 70px; right: 700px;opacity: 70; }
+   25% {bottom: 70px; right: 900px;opacity: 20; }
+   0% {bottom: 70px; right: 1000px;opacity: 0; }
+  }
